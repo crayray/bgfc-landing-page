@@ -8,10 +8,28 @@ body {
     flex-direction: row;
   }
 
+  #social {
+    display: flex; /* or inline-flex */
+    justify-content: center;
+    flex-direction: row;  
+  }
+
+  .social-size {
+      max-width: 2em;
+      margin: .5em;
+  }
+
   #gif {
       max-width: 700px;
   }
 
   #website {
       text-align: center;
+      font-family: 'Playfair Display', serif;
+  }
+
+  #button {
+      text-align: center;
+      margin: 2em;
+      text-decoration: none;
   }
