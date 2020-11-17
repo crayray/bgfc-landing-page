@@ -21,9 +21,9 @@
         Website coming soon
       </div>
       <div id="singup">
-        <form action="?" method="POST">
-          <input value="Sign up for our emails">
-          <button type=submit id="button">Subscribe</div>
+        <form name="submit-to-google-sheet">
+          <input name="email" type="email" placeholder="Email" required>
+          <button type="submit">Send</button>
         </form>
         <div id="social">
           <img class="social-size" src="instagramicon.png">
@@ -34,8 +34,19 @@
     <div></div>
   </div>
 
-
+  <script>
+    const scriptURL = '<SCRIPT URL>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
+
 
 </html>
