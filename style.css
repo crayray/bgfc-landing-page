@@ -1,5 +1,6 @@
 body {
  background-color: E7E6D1;   
+ font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -29,7 +30,7 @@ body {
   }
 
   #button {
-      text-align: center;
+      /* text-align: center;
       margin: 2em;
-      text-decoration: none;
+      text-decoration: none; */
   }
