@@ -19,11 +19,19 @@ body {
 }
 #social {
   text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  
 }
 
-.social-size {
-  max-width: 2em;
-  margin: 0.5em;
+#instagram {
+    width: 3rem;
+    padding-right: 1rem;
+}
+
+#slack {
+    padding-left: 5rem;
+    width: 3rem;
 }
 
 #gif {
