@@ -5,11 +5,18 @@ body {
 }
 
 .container {
-    display: flex; /* or inline-flex */
+    display: flex; 
     justify-content: space-evenly;
     flex-direction: row;
   }
 
+.column {
+    width: 33.3%;
+}
+
+#middle {
+    width: 33%;
+}
   #social {
     text-align: center;
   }
@@ -20,7 +27,8 @@ body {
   }
 
   #gif {
-      max-width: 700px;
+      width: 100%;
+      text-align: center;
   }
 
   #website {
@@ -37,3 +45,36 @@ body {
 #singup {
     text-align: center;
 }
+
+@media screen and (max-width: 375px) {
+    body {
+      background-color: red;
+    }
+
+    .column {
+        display: none;
+    }
+
+    #middle {
+        width: 100%
+    }
+
+  }
+
+
+  
+
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: red;
+    }
+
+    .column {
+        display: none;
+    }
+
+    #middle {
+        width: 100%
+    }
+
+  }
