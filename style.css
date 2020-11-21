@@ -1,111 +1,161 @@
 body {
- background-color: E7E6D1;   
- font-family: 'Playfair Display', serif;
- font-style: italic;
+  background-color: E7E6D1;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
 }
 
 .container {
-    display: flex; 
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
 
 .column {
-    width: 33.3%;
+  width: 33.3%;
 }
 
 #middle {
-    width: 33%;
+  width: 33%;
 }
-  #social {
-    text-align: center;
-  }
+#social {
+  text-align: center;
+}
 
-  .social-size {
-      max-width: 2em;
-      margin: .5em;
-  }
+.social-size {
+  max-width: 2em;
+  margin: 0.5em;
+}
 
-  #gif {
-      width: 100%;
-      text-align: center;
-  }
+#gif {
+  width: 100%;
+  text-align: center;
+}
 
-  #website {
-      text-align: center;
-      font-size: 35px;
-      margin: .75em;
-
-  }
+#website {
+  text-align: center;
+  font-size: 35px;
+  margin: 0.75em;
+}
 input {
-    padding: 1rem 2rem;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  margin-top: 0px;
+  display: inline-block;
+  font-size: 1rem;
 }
 
-#singup {
-    text-align: center;
+#signup {
+  text-align: center;
 }
 
 button {
-    display: inline-block;
-    border: none;
-    padding: 1rem 1rem;
-    margin: 0;
-    text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  display: inline-block;
+  border: none;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 button:hover,
 button:focus {
-    background: #0053ba;
+  background: #0053ba;
 }
 
 button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 button:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 @media screen and (max-width: 375px) {
-    body {
-      background-color: red;
-    }
+  body {
+    background-color: red;
+  }
 
-    .column {
-        display: none;
-    }
+  .column {
+    display: none;
+  }
 
-    #middle {
-        width: 100%
-    }
-
+  #middle {
+    width: 100%;
   }
 
 
+ button {
+    padding: .5rem .5rem;
+    font-size: .95rem;
+ }
+
+ input {
+    font-size: 1rem;
+    padding: .5rem .5rem;
+    margin-right: .5rem;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+
+  .column {
+    display: none;
+  }
+
+  #middle {
+    width: 100%;
+  }
+
+  button {
+    padding: .5rem .5rem;
+    font-size: .95rem;
+ }
+
+ input {
+    font-size: 1rem;
+    padding: .5rem .5rem;
+    margin-right: .5rem;
+ }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+      background-color: red;
+    }
+  
+    .column {
+      display: none;
+    }
+  
+    #middle {
+      width: 100%;
+    }
+  
+    button {
+      padding: .5rem .5rem;
+      font-size: .95rem;
+   }
+  
+   input {
+      font-size: 1rem;
+      padding: .5rem .5rem;
+      margin-right: .5rem;
+   }
+  
+  }
   
 
-  @media screen and (max-width: 768px) {
-    body {
-      background-color: red;
-    }
 
-    .column {
-        display: none;
-    }
-
-    #middle {
-        width: 100%
-    }
-
-  }
