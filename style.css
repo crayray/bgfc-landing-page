@@ -1,39 +1,150 @@
 body {
- background-color: E7E6D1;   
- font-family: 'Playfair Display', serif;
- font-style: italic;
+  background-color: #e7e6d1;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
 }
 
 .container {
-    display: flex; /* or inline-flex */
-    justify-content: space-evenly;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.column {
+  width: 33.3%;
+}
+
+#middle {
+  width: 33%;
+}
+#social {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+#instagram {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+#slack {
+  padding-left: 5rem;
+  width: 3rem;
+}
+
+#gif {
+  width: 100%;
+  text-align: center;
+}
+
+#website {
+  text-align: center;
+  font-size: 35px;
+  margin: 0.75em;
+}
+input {
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+  margin-top: 0px;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+#signup {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  background: #020202;
+  color: #ddf1fc;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+@media screen and (max-width: 375px) {
+  .column {
+    display: none;
   }
 
-  #social {
-    text-align: center;
+  #middle {
+    width: 100%;
   }
 
-  .social-size {
-      max-width: 2em;
-      margin: .5em;
+  button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.95rem;
   }
 
-  #gif {
-      max-width: 700px;
+  input {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    display: none;
   }
 
-  #website {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
+  #middle {
+    width: 100%;
   }
 
-  #button {
-      /* text-align: center;
-      margin: 2em;
-      text-decoration: none; */
+  button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.95rem;
   }
 
-#singup {
-    text-align: center;
+  input {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .column {
+    display: none;
+  }
+
+  #middle {
+    width: 100%;
+  }
+
+  button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
