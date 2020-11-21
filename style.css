@@ -10,9 +10,7 @@ body {
   }
 
   #social {
-    display: flex; /* or inline-flex */
-    justify-content: center;
-    flex-direction: row;  
+    text-align: center;
   }
 
   .social-size {
@@ -30,5 +28,11 @@ body {
   }
 
   #button {
-
+      /* text-align: center;
+      margin: 2em;
+      text-decoration: none; */
   }
+
+#singup {
+    text-align: center;
+}
