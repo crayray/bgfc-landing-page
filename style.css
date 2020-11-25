@@ -14,9 +14,42 @@ body {
   width: 33.3%;
 }
 
-#middle {
+/* #middle {
   width: 33%;
+} */
+
+/*Centering Gif  from: https://www.sitepoint.com/css3-responsive-centered-image/ */
+img.ri {
+  position: relative;
+  max-width: 45%;
+  top: 10%;
+  left: 10%;
 }
+
+img.ri:empty {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.ri {
+    max-width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri {
+    max-height: 90%;
+  }
+}
+
+/* End of Gif centering */
+
 #social {
   text-align: center;
   margin-top: 2.5rem;
@@ -33,15 +66,17 @@ body {
   width: 3rem;
 }
 
-#gif {
+/* #gif {
   width: 100%;
   text-align: center;
-}
+} */
 
 #website {
   text-align: center;
   font-size: 35px;
   margin: 0.75em;
+  position: relative;
+  top: 30%;
 }
 input {
   padding: 1rem 1rem;
@@ -49,11 +84,11 @@ input {
   margin-top: 0px;
   display: inline-block;
   font-size: 1rem;
-
 }
 
 #signup {
   text-align: center;
+  
 }
 
 button {
@@ -75,7 +110,7 @@ button {
 
 button:hover,
 button:focus {
-  background: #DA4F27;
+  background: #da4f27;
 }
 
 button:focus {
@@ -149,4 +184,3 @@ button:active {
     margin-right: 0.5rem;
   }
 }
-
