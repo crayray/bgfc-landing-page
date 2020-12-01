@@ -50,6 +50,10 @@ img.ri:empty {
 
 /* End of Gif centering */
 
+form {
+    padding-top: 1rem;
+}
+
 #social {
   text-align: center;
   margin-top: 2.5rem;
@@ -79,11 +83,11 @@ img.ri:empty {
   top: 30%;
 }
 input {
-  padding: 1rem 1rem;
+  padding: .95rem .95rem;
   margin-right: 1rem;
   margin-top: 0px;
   display: inline-block;
-  font-size: 1rem;
+  font-size: .95rem;
 }
 
 #signup {
@@ -94,7 +98,7 @@ input {
 button {
   display: inline-block;
   border: none;
-  padding: 1rem 1rem;
+  padding: .95rem .95rem;
   text-decoration: none;
   background: #020202;
   color: #ddf1fc;
@@ -133,7 +137,7 @@ button:active {
 
   button {
     padding: 0.5rem 0.5rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   input {
@@ -154,7 +158,7 @@ button:active {
 
   button {
     padding: 0.5rem 0.5rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   input {
@@ -175,11 +179,11 @@ button:active {
 
   button {
     padding: 0.5rem 0.5rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   input {
-    font-size: 1rem;
+    font-size: .95rem;
     padding: 0.5rem 0.5rem;
     margin-right: 0.5rem;
   }
