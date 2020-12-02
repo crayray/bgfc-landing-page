@@ -29,10 +29,11 @@ img.ri {
 img.ri:empty {
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -50,19 +51,23 @@ img.ri:empty {
 
 /* End of Gif centering */
 
+form {
+  padding-top: 1rem;
+}
+
 #social {
   text-align: center;
   margin-top: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 #instagram {
   width: 3rem;
-  padding-right: 1rem;
+  margin-left: 2rem;
 }
 
 #slack {
-  padding-left: 5rem;
+  padding-left: 0.5rem;
   width: 3rem;
 }
 
@@ -79,22 +84,21 @@ img.ri:empty {
   top: 30%;
 }
 input {
-  padding: 1rem 1rem;
+  padding: 0.95rem 0.95rem;
   margin-right: 1rem;
   margin-top: 0px;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 #signup {
   text-align: center;
-  
 }
 
 button {
   display: inline-block;
   border: none;
-  padding: 1rem 1rem;
+  padding: 0.95rem 0.95rem;
   text-decoration: none;
   background: #020202;
   color: #ddf1fc;
@@ -133,7 +137,7 @@ button:active {
 
   button {
     padding: 0.5rem 0.5rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   input {
@@ -154,7 +158,7 @@ button:active {
 
   button {
     padding: 0.5rem 0.5rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   input {
@@ -175,12 +179,38 @@ button:active {
 
   button {
     padding: 0.5rem 0.5rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   input {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 0.5rem 0.5rem;
     margin-right: 0.5rem;
   }
 }
+
+
+/* Fixing Safari load issue: https://dev.to/krantikr/browser-specific-css-for-internet-explorer-firefox-chrome-safari-and-edge-394p#safari */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    img.ri {
+        /* position: relative; */
+        /* max-width: 45%; */
+        /* top: 10%;
+        left: 10%; */
+        background-color: fuchsia;
+      }
+      
+      img.ri:empty {
+        /* top: 50%;
+        left: 50%; */
+        background-color: fuchsia;
+/*       
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+      }
+}}
