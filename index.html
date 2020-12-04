@@ -16,13 +16,21 @@
   <div class="container">
     <div class="column"></div>
     <div id="middle">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>You're subscribed!</p>
+        </div>
+      </div>
       <img id='gif' src='bgfcbagwink.gif' class="ri">
       <div id="website">
         Website coming soon
         <div id="signup">
           <form name="submit-to-google-sheet">
             <input name="Email" type="email" placeholder="Email" required>
-            <button type="submit">Join our mailing list</button>
+            <button id="myBtn" type="submit">Join our mailing list</button>
           </form>
           <div id="social">
             <a href="https://www.instagram.com/browngirlsfoodclub/" target="_"><img id="instagram" src="instagramicon.png"></a>
@@ -46,6 +54,7 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script type="text/javascript" src="index.js"></script>
 
 </body>
 
