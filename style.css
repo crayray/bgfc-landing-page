@@ -24,6 +24,9 @@ img.ri {
   max-width: 45%;
   top: 10%;
   left: 10%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 img.ri:empty {
@@ -35,6 +38,9 @@ img.ri:empty {
   -o-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media screen and (orientation: portrait) {
@@ -199,18 +205,21 @@ button:active {
         /* max-width: 45%; */
         /* top: 10%;
         left: 10%; */
-        background-color: fuchsia;
+        
       }
       
       img.ri:empty {
         /* top: 50%;
         left: 50%; */
-        background-color: fuchsia;
+        /* background-color: fuchsia; */
 /*       
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); */
+        background-color: fuchsia;
+        
+      
       }
 }}
