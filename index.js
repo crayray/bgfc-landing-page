@@ -1,3 +1,4 @@
+//git test
 // Get the modal
 var modal = document.getElementById("myModal");
 
