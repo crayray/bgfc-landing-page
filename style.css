@@ -6,53 +6,13 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
-.column {
-  width: 33.3%;
-}
-
-/* #middle {
-  width: 33%;
-} */
-
-/*Centering Gif  from: https://www.sitepoint.com/css3-responsive-centered-image/ */
-img.ri {
-  position: relative;
-  max-width: 45%;
-  top: 10%;
-  left: 10%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-img.ri:empty {
-  top: 50%;
-  left: 50%;
-
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-@media screen and (orientation: portrait) {
-  img.ri {
-    max-width: 90%;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  img.ri {
-    max-height: 90%;
-  }
+.landing-page-gif {
+  max-width: 450px;
+  margin-top: 50px;
 }
 
 /* End of Gif centering */
@@ -77,18 +37,14 @@ form {
   width: 3rem;
 }
 
-/* #gif {
-  width: 100%;
-  text-align: center;
-} */
-
 #website {
   text-align: center;
   font-size: 35px;
-  margin: 0.75em;
-  position: relative;
-  top: 30%;
+  padding: 0.75em;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 input {
   padding: 0.95rem 0.95rem;
   margin-right: 1rem;
@@ -147,7 +103,7 @@ button:active {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
@@ -156,7 +112,7 @@ button:active {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
-  
+
   /* The Close Button */
   .close {
     color: #aaa;
@@ -164,7 +120,7 @@ button:active {
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: black;
@@ -234,32 +190,3 @@ button:active {
     margin-right: 0.5rem;
   }
 }
-
-
-/* Fixing Safari load issue: https://dev.to/krantikr/browser-specific-css-for-internet-explorer-firefox-chrome-safari-and-edge-394p#safari */
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-
-    img.ri {
-        /* position: relative; */
-        /* max-width: 45%; */
-        /* top: 10%;
-        left: 10%; */
-        
-      }
-      
-      img.ri:empty {
-        /* top: 50%;
-        left: 50%; */
-        /* background-color: fuchsia; */
-/*       
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); */
-        background-color: fuchsia;
-        
-      
-      }
-}}

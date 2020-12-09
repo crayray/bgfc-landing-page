@@ -8,45 +8,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <div class="column"></div>
-    <div id="middle">
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>You're subscribed!</p>
-        </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>You're subscribed!</p>
       </div>
-      <img id='gif' src='bgfcbagwink.gif' class="ri">
-      <div id="website">
-        Website coming soon
-        <div id="signup">
-          <form name="submit-to-google-sheet">
-            <input id="input" name="Email" type="email" placeholder="Email" required>
-            <button id="myBtn" type="submit">Join our mailing list</button>
-          </form>
-          <div id="social">
-            <a href="https://www.instagram.com/browngirlsfoodclub/" target="_"><img id="instagram" src="instagramicon.png"></a>
-            <a href="https://browngirlsfoodclub.slack.com" target="_"><img id="slack" src="slackiconvector.png"></a>
-          </div>
-        </div>
-      </div>
-    
     </div>
-    <div class="column"></div>
+
+    <img src='bgfcbagwink.gif' class="landing-page-gif">
+    <div id="website">
+      Website coming soon
+      <div id="signup">
+        <form name="submit-to-google-sheet">
+          <input id="input" name="Email" type="email" placeholder="Email" required>
+          <button id="myBtn" type="submit">Join our mailing list</button>
+        </form>
+        <div id="social">
+          <a href="https://www.instagram.com/browngirlsfoodclub/" target="_"><img id="instagram" src="instagramicon.png"></a>
+          <a href="https://browngirlsfoodclub.slack.com" target="_"><img id="slack" src="slackiconvector.png"></a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxH1MS6h8Epku340c9vwWhwOTAtSJC_fSSk0Erc5eWY--eCj9Sr/exec'
     const form = document.forms['submit-to-google-sheet']
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
