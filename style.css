@@ -43,14 +43,16 @@ form {
   padding: 0.75em;
   width: 100%;
   box-sizing: border-box;
+  margin: auto;
 }
 
 input {
   padding: 0.95rem 0.95rem;
-  margin-right: 1rem;
-  margin-top: 0px;
-  display: inline-block;
+  display: block;
   font-size: 0.95rem;
+  margin: auto;
+  margin-bottom: 10px;
+
 }
 
 #signup {
@@ -58,8 +60,9 @@ input {
 }
 
 button {
-  display: inline-block;
+  display: block;
   border: none;
+  margin: auto;
   padding: 0.95rem 0.95rem;
   text-decoration: none;
   background: #020202;
@@ -106,11 +109,13 @@ button:active {
 
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #DDF1FC;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    font-size: 25px;
   }
 
   /* The Close Button */
@@ -129,13 +134,7 @@ button:active {
   }
 
 @media screen and (max-width: 375px) {
-  .column {
-    display: none;
-  }
 
-  #middle {
-    width: 100%;
-  }
 
   button {
     padding: 0.5rem 0.5rem;
@@ -145,18 +144,10 @@ button:active {
   input {
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
-    margin-right: 0.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .column {
-    display: none;
-  }
-
-  #middle {
-    width: 100%;
-  }
 
   button {
     padding: 0.5rem 0.5rem;
@@ -166,18 +157,10 @@ button:active {
   input {
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
-    margin-right: 0.5rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .column {
-    display: none;
-  }
-
-  #middle {
-    width: 100%;
-  }
 
   button {
     padding: 0.5rem 0.5rem;
@@ -187,6 +170,6 @@ button:active {
   input {
     font-size: 0.95rem;
     padding: 0.5rem 0.5rem;
-    margin-right: 0.5rem;
+ 
   }
 }
