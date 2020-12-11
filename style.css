@@ -14,7 +14,7 @@ body {
 /* The simple way to center the gif on the page by changing the display to BLOCK (Imgs are inline), then setting margin-right and margin-left to auto. You also need to set a width */
 .landing-page-gif {
   max-width: 450px;
-  margin-top: 50px;
+  margin-top: 200px;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -22,13 +22,13 @@ body {
 
 
 form {
-  padding-top: 1rem;
+  padding-top: 50px;
 }
 
 #social {
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 3rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 #instagram {
@@ -51,10 +51,12 @@ form {
 
 input {
   padding: 0.95rem 0.95rem;
-  display: block;
+  margin-right: 1rem;
+  margin-top: 0px;	
+  display: inline-block;
   font-size: 0.95rem;
-  margin: auto;
-  margin-bottom: 10px;
+  font-style: italic;
+  
 
 }
 
@@ -63,9 +65,9 @@ input {
 }
 
 button {
-  display: block;
+  display: inline-block;
   border: none;
-  margin: auto;
+ 
   padding: 0.95rem 0.95rem;
   text-decoration: none;
   background: #020202;
