@@ -10,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
- 
+ <div class="container" >
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -25,7 +26,7 @@
     </div>
 
     <img src='bgfcbagwink.gif' class="landing-page-gif">
-    <div id="website">
+    <div id="website" class="container">
       Website coming soon
       <div id="signup">
         <form name="submit-to-google-sheet">
@@ -42,9 +43,10 @@
     </div>
 
 
-
+  </div>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxH1MS6h8Epku340c9vwWhwOTAtSJC_fSSk0Erc5eWY--eCj9Sr/exec'
+    // Google project name: Submit Form to Google Sheets
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0aKE_pTkx-o-E5t9H7F_uIq_jjllmW-dbpSNWz_sg0LG4Hok/exec'
     const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
