@@ -13,7 +13,8 @@ var input = document.getElementById("input");
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
   if (input.value) {
-    input.value = "";
+    // This line was setting the value to nothing, so nothing was captured
+    // input.value = "";
     input.required = false;
     modal.style.display = "block";
    
@@ -25,11 +26,13 @@ btn.onclick = function () {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
+  input.value = "";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    input.value = "";
   }
 };
